@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "public/images/**/*"
+  ],
+  "watch": [
+    "src"
+  ],
+  "ext": "js,json"
+}

@@ -1,0 +1,10 @@
+/node_modules
+/dist
+/.env
+/public/images/avatars
+/public/images/tournaments
+/public/images/announcements
+/public/images/photos
+/public/images/previews
+.DS_Store
+/docs
