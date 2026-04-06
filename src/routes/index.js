@@ -7,12 +7,12 @@ import admin from './admin';
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/api/', (req, res) => {
   res.json({ status: 'ok', service: 'pubgarena-backend' });
 });
 
-/** Простой health-check для браузера (без префикса /api). */
-router.get('/ping', (req, res) => {
+/** Простой health-check для браузера. */
+router.get('/api/ping', (req, res) => {
   res.type('text/plain').send('pong');
 });
 

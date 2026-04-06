@@ -24,11 +24,11 @@ app.set('view engine', 'jade');
 
 app.use(logger('dev'));
 
-app.post(
-  '/api/webhooks/stripe',
-  express.raw({ type: 'application/json' }),
-  StripeWebhookController.handle,
-);
+// app.post(
+//   '/api/webhooks/stripe',
+//   express.raw({ type: 'application/json' }),
+//   StripeWebhookController.handle,
+// );
 
 app.use(express.json({ limit: `${MAX_FIELDS_SIZE_MB}mb` }));
 app.use(express.urlencoded({ extended: true, limit: `${MAX_FIELDS_SIZE_MB}mb` }));
