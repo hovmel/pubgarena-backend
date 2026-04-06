@@ -11,12 +11,10 @@ router.get('/api/', (req, res) => {
   res.json({ status: 'ok', service: 'pubgarena-backend' });
 });
 
-/** Простой health-check для браузера. */
+/** Health-check: plain text, удобно открывать в браузере. */
 router.get('/api/ping', (req, res) => {
   res.type('text/plain').send('pong');
 });
-
-router.get('/api/ping', (req, res) => res.json('ping'));
 
 router.use('/api/auth', auth);
 router.use('/api/users', users);
